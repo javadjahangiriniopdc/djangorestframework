@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "170ccebb-822f-40ce-88f8-5c4eeefae3bf",
+		"name": "drfsampleproject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21796942"
+	},
+	"item": [
+		{
+			"name": "get_list_student",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobile\":\"09374351243\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/myapp",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"myapp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insert_student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"test3\",\r\n    \"family\": \"testfamily32\",\r\n    \"mobile\": \"09145531772\",\r\n    \"post\" : \r\n        {\r\n            \"title\": \"new title 62\",\r\n            \"content\": \"sample content 26\"\r\n        }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/myapp/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"myapp",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_student",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"test18\",\r\n    \"family\": \"testfamily1378\",\r\n    \"mobile\": \"09144351243\",\r\n    \"post\" : \r\n        {\r\n            \"title\": \"new title 62\",\r\n            \"content\": \"sample content 26\"\r\n        }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/myapp/student/13",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"myapp",
+						"student",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_student",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"test18\",\r\n    \"family\": \"testfamily1378\",\r\n    \"mobile\": \"09144351243\",\r\n    \"post\" : \r\n        {\r\n            \"title\": \"new title 62\",\r\n            \"content\": \"sample content 26\"\r\n        }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/myapp/student/16",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"myapp",
+						"student",
+						"16"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "patch_student",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"mobile\": \"09145553272\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/myapp/13",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"myapp",
+						"13"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
